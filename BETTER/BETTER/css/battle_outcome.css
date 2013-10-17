@@ -1,0 +1,102 @@
+﻿
+.content_container {
+    margin-top: 2%;
+}
+
+#bOutcome_box {
+    width: 70%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #F4F4F4;
+    font-family: 'Caravel','Quantico', Helvetica, sans-serif;
+    color: #303030;
+    text-align:center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+#winnerImage {
+    margin-bottom: 5%;
+    margin: auto;
+}
+
+#btnReturn
+{
+     cursor:pointer;
+     border-width:5px;
+     border-style:solid;
+     border-color:#303030;
+     -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+     border-radius: 12px;
+     text-align:center;
+     width:230px;
+     height:30px;
+     font-size:16pt;
+     font-family: 'Caravel', 'Quantico', 'Helvetica', sans-serif;
+     color:#e0dfde;
+     background:#a32935;
+     display:inline-block;
+     padding:10px 3px 8px 3px;
+     margin-top: 10%;
+     margin-bottom: 2%;
+     -webkit-appearance: none;
+}
+
+#btnReturn:hover{
+    background:#bc2f3c;
+ }
+
+#battleOutcome_item1 {
+    margin-bottom:5%;
+    font-style:italic;
+}
+
+@media screen and (max-width: 1000px) {  
+
+    #bOutcome_box{
+
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 700px) {  
+   
+    #bOutcome_box {
+        width: 70%;
+    }
+    #btnReturn {
+     width:170px;
+     height:26px;
+     font-size:14pt;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+
+    #bOutcome_box {
+        width:70%;
+    }    
+}
+
+@media only screen and (max-width : 450px) {
+       
+    #bOutcome_box {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+
+    #bOutcome_box {
+        width: 92%;
+    }
+    #btnReturn {
+     width:150px;
+     height:26px;
+     font-size:12pt;
+    }
+}

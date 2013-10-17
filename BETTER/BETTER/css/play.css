@@ -1,0 +1,41 @@
+﻿.content_container {
+	margin-top: 2%;
+}
+header nav {
+    margin-bottom: 2%;
+}
+.page_login_button {
+	margin-top: 6%;
+}
+
+.page_intro_button {
+	margin-top: 6%;
+}
+
+.page_login_button p {
+	margin-top: 2%;
+}
+
+.page_intro_button p {
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+/*********ALTERNATE SIZE TABLET OR IPHONE LANDSCAPE**********/
+@media only screen and (max-width : 600px) {  
+
+   .page_login_button img {
+   		width: 160px;
+   		height:45px;
+   }
+
+	.page_intro_button img {
+   		width: 160px;
+   		height:45px;
+   }
+}
+  
+/****************IPHONE SIZE SMARTPHONE*********************/
+@media only screen and (max-width : 380px) {  
+
+}  

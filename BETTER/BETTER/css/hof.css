@@ -1,0 +1,204 @@
+﻿header nav{
+    margin-bottom: 2%;
+}
+
+.hof_table {
+	margin: auto;
+    width: 85%;
+}
+
+.hof_table table{
+	width:100%;
+	height:100%;
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+
+.hof_table td{
+	border:5px solid #303030;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+    vertical-align: middle;
+	padding:20px;
+	font-size:14px;
+	font-family:'Quantico', Helvetica, sans-serif;
+	font-style: italic;
+}
+
+.hof_table thead tr:first-child th{
+	background-color:#ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:'Quantico', Helvetica, sans-serif;
+	font-weight:bold;
+	color:#303030;
+}
+
+/******************THESE 4 ELEMENTS DO THE CURVED EDGES ON EACH CORNER*************************/
+.hof_table tbody tr:last-child td:last-child {
+	-moz-border-radius-bottomright:20px;
+	-webkit-border-bottom-right-radius:20px;
+	border-bottom-right-radius:20px;
+}
+
+.hof_table table thead tr:first-child th:first-child {
+	-moz-border-radius-topleft:20px;
+	-webkit-border-top-left-radius:20px;
+	border-top-left-radius:20px;
+}
+
+.hof_table table thead tr:first-child th:last-child {
+	-moz-border-radius-topright:20px;
+	-webkit-border-top-right-radius:20px;
+	border-top-right-radius:20px;
+}
+
+.hof_table tbody tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+/*************THESE 2 ELEMENTS CONTROL THE LIGHT GREY/DARK GREY ROW COLOURS**************/
+.hof_table tr:nth-child(even){ 
+    background-color:#515151; 
+    color: #e0dfde;
+}
+
+.hof_table tr:nth-child(odd){ 
+    background-color:#e0dfde; 
+    color: #515151;
+}
+
+
+
+
+/**********************************TABLE MEDIA QUERIES*********************************/
+        /****Original source: http://elvery.net/demo/responsive-tables/ *********/
+@media only screen and (max-width: 1000px) {
+
+    .hof_table{
+        margin: auto;
+        width: 100%;
+    }
+ }
+
+/****************REMOVES "ELEMENT TYP"E & "DATE CREATED" IN TABLE********************/
+@media only screen and (max-width: 680px) {
+
+   .hof_table thead tr th:nth-child(3),
+   .hof_table thead tr th:nth-child(4),
+   .hof_table tbody tr td:nth-child(3),
+   .hof_table tbody tr td:nth-child(4) {
+
+            display: none;
+   }        
+}
+
+
+
+
+/**************************REMOVES "H.O.F Date"**************************************/
+@media only screen and (max-width : 500px) {
+
+    .hof_table thead tr th:nth-child(5),
+    .hof_table tbody tr td:nth-child(5){
+
+        display: none;
+    }     
+
+    hof_table thead tr th{
+
+        font-size:10pt;
+        text-align:left;
+        margin: 0px;
+        padding:0px;
+                }
+    hof_table tbody tr td {
+
+        font-size:10pt;
+        margin: 0px;
+        padding:0px;
+    }
+
+    .hof_table table thead tr:first-child th:nth-child(2) {
+        -moz-border-radius-topright: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .hof_table table tbody tr:last-child td:nth-child(2) {
+	    -moz-border-radius-bottomright:20px;
+	    -webkit-border-bottom-right-radius:20px;
+	    border-bottom-right-radius:20px;
+        background:none;
+    }
+}
+
+
+
+/*************************REMOVES TABLE AND DISPLAYS INFO IN A LIST*********************/
+               /*************USED ONLY BY VERY SMALL DEVICES**************/
+@media screen and (max-width:295px){
+
+    .hof_tables td
+    {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .hof_table td:before
+    {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Force table to not be like tables anymore */
+	.hof_table table, 
+	.hof_table thead, 
+	.hof_table tbody, 
+	.hof_table th, 
+	.hof_table td, 
+	.hof_table tr { 
+		display: block; 
+        border: none;
+	}
+
+    
+
+    .hof_table table thead tr:first-child th:nth-child(2)
+    {
+        -moz-border-radius-topright: 0px;
+        -webkit-border-top-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .hof_table table thead tr:first-child th:first-child{
+        -moz-border-radius-topright: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-right-radius: 20px;
+
+        -moz-border-radius-topleft: 20px;
+        -webkit-border-top-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .hof_table table tbody tr:last-child {
+	    -moz-border-radius-bottomright:20px;
+	    -webkit-border-bottom-right-radius:20px;
+	    border-bottom-right-radius:20px;
+
+        -moz-border-radius-bottomleft:20px;
+	    -webkit-border-bottom-left-radius:20px;
+	    border-bottom-left-radius:20px;
+    }
+}

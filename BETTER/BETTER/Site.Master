@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="BETTER.Site1" %>
+
+<!DOCTYPE html>
+<html>
+
+<head runat="server">
+	<title>B.E.T.T.E.R.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <asp:ContentPlaceHolder ID="Header_Links" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+	<link href='http://fonts.googleapis.com/css?family=Quantico:700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+
+	<link rel="icon" type="image/ico" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="favicon.ico" />
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+	    $(function () {
+	        var pull = $('#pull');
+	        menu = $('nav ul');
+	        menuHeight = menu.height();
+
+	        $(pull).on('click', function (e) {
+	            e.preventDefault();
+	            menu.slideToggle();
+	        });
+	    });
+
+	    $(window).resize(function () {
+	        var w = $(window).width();
+	        if (w > 380 && menu.is(':hidden')) {
+	            menu.removeAttr('style');
+	        }
+	    });
+	</script>
+</head>
+<body>
+
+<!-- There are two seperate headers for the Desktop and Mobile versions respectively.
+ Breaking them up this way helps make the movement with media queires a whole lot easier -->
+
+<div class="container"> <!-- Container to control total page size -->
+	<header class="desktop_header"> 
+		<!-- <div id="logo">
+			<a href="home.html">Logo<img src="img/better_logo.png" /></a>
+		</div> -->
+        <asp:ContentPlaceHolder ID="Desktop_Login_Buttons" runat="server">
+		    
+
+        </asp:ContentPlaceHolder>
+		<nav class="desktop_nav">
+			<ul>
+				<li><a href="default.aspx"><img src="img/home_button.png" alt="Home" /></a></li>
+				<li><a href="play.aspx"><img src="img/play_button.png" alt="Play" /></a></li>
+				<li><a href="hof.aspx"><img src="img/hof_button.png" alt="H.O.F."/></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<header class="mobile_header"> 
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="default.aspx">HOME</a></li>
+				<li><a href="play.aspx">PLAY</a></li>
+				<li><a href="hof.aspx">H.O.F</a></li>
+			</ul>
+			<a href="#" id="pull"><span id="menu_button">Menu</span></a>
+		</nav>
+
+		<!--<div id="logo">
+				<a href="home.html">Logo<img src="img/better_logo.png" /></a>
+			</div> -->
+    
+    <asp:ContentPlaceHolder ID="Mobile_Login_Buttons" runat="server">
+    		
+    </asp:ContentPlaceHolder>
+
+	</header>
+  
+	<div class="content_container">
+		<section class="main_content">
+			<div class="content_styling">
+				<asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+
+
+
+				</asp:ContentPlaceHolder>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer_container">
+		<section class="footer_content">
+		    <div class="content_styling">
+			    <h2>B.E.T.T.E.R.</h2>
+                <h4>"BATTLING ELEMENTAL TITANS THROUGH EXERCISE ROUTINES"</h4>
+                <h5>Copyright 2013 Aperture Science Inc. All rights reserved</h5>
+	            <p> 
+		           Found a bug? Let us know over at <a href="mailto:bugfix@better.com">bugfix@better.com</a>
+                </p>	
+		    </div>
+        </section>
+	</footer>
+</div>
+</body>
+</html>

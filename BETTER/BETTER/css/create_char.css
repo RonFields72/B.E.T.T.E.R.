@@ -1,0 +1,147 @@
+﻿
+.content_container {
+    margin-top: 2%;
+}
+
+#createchar_box {
+    width: 70%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #F4F4F4;
+    font-family: 'Caravel','Quantico', Helvetica, sans-serif;
+    color: #303030;
+    text-align:center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+#createchar {
+    display: inline-block;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#createchar_item1 {
+    margin-top: 2%;
+    margin-bottom:5%;
+}
+#createchar_item2 {
+    margin-top: 10%;
+    margin-bottom:5%;
+}
+#createchar_image {
+    margin-top: 10%;
+}
+#createchar_item3 {
+    margin-bottom:1%;
+}
+#createchar_buttons {
+    margin-bottom:5%;
+}
+
+[type=text] {
+     border-width:5px;
+     border-style:solid;
+     border-color:#515151;
+     -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+     border-radius: 18px;
+     font-size:14px;
+     font-family: 'Quantico', Helvetica, sans-serif;
+     color:#2d2e2e;
+     padding-left:14px;
+     width:170px;
+     height:26px;
+     background:#E0DFDE;
+ }
+
+[type=submit]{
+     cursor:pointer;
+     border-width:5px;
+     border-style:solid;
+     border-color:#303030;
+     -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+     border-radius: 12px;
+     text-align:center;
+     width:134px;
+     height:57px;
+     font-size:14pt;
+     font-family: 'Caravel', 'Quantico', 'Helvetica', sans-serif;
+     color:#e0dfde;
+     background:#a32935;
+     display:inline-block;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     -webkit-appearance: none;
+ }
+
+[type=submit]:hover{
+    background:#bc2f3c;
+ }
+p {
+    font-family: 'Quantico', Helvetica, sans-serif;
+    }
+
+@media screen and (max-width: 1000px) {  
+
+    #createchar_box{
+        width: 80%;
+    }
+
+    #createchar {
+        width: 40%; 
+    }
+}
+
+@media only screen and (max-width : 700px) {  
+   
+    #createchar {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+
+    #createchar {
+        width:70%;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+       
+    #createchar {
+        width: 80%;
+    }
+    [type=submit]{
+        font-size: 12pt;
+    }  
+}
+
+
+@media only screen and (max-width : 380px) { 
+    
+    #createchar_box {
+        width:92%;
+    }
+
+    #createchar {
+        width:100%
+    }
+
+    [type=text] {
+        width:140px;
+     }
+
+    [type=email] {
+        width:140px;
+     }
+
+    [type=password] {
+        width:140px;
+     }
+}

@@ -1,0 +1,109 @@
+﻿
+.content_container {
+    margin-top: 2%;
+}
+
+#battleBox {
+    width: 95%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: 'Quantico', Helvetica, sans-serif;
+    color: #F4F4F4;
+    text-align:center;
+    margin: auto;
+    padding: 2%;
+}
+
+#challengerOne {
+    float: left;
+    display: block;
+    padding: 5%;
+}
+#versus {
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    color: #a32935;
+    margin-top: 15%;
+}
+#mobile_versus {
+    display: none; 
+}
+
+#challengerTwo {
+    float: right;
+    display: inline-block;
+    padding: 5%;
+}
+#buttons {
+    margin-top: 15%;
+}
+label {
+    margin-top: 2%; 
+}
+
+[type=submit]{
+     cursor: pointer;
+     border-width:5px;
+     border-style:solid;
+     border-color:#F4F4F4;
+     -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+     border-radius: 12px;
+     text-align:center;
+     width:200px;
+     height:60px;
+     font-size:16pt;
+     font-family: 'Caravel', 'Quantico', 'Helvetica', sans-serif;
+     color:#e0dfde;
+     background:#a32935;
+     display:inline-block;
+     margin-top: 4%;
+    -webkit-appearance: none;
+}
+
+[type=submit]:hover {
+    background: #bc2f3c;
+}
+h3 {
+    font-size: 65pt; 
+}
+@media only screen and (max-width: 1000px)
+{
+    h3
+    {
+        font-size: 45pt;
+    }
+}
+@media only screen and (max-width : 600px) {
+    
+    #challengerOne {
+        float:none;
+    }
+    #challengerTwo {
+        float: none;
+        width: 80%;
+    } 
+    #mobile_versus {
+        display: block;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom:10%;
+        text-align: center;
+        width: 50%;
+        color: #a32935;
+    } 
+    #versus {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 380px) { 
+    
+   [type=submit]{
+     width:160px;
+     height:60px;
+    -webkit-appearance: none;
+    }
+}
